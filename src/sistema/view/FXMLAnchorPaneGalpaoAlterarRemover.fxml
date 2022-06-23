@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="960.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema.controller.FXMLAnchorPaneGalpaoAlterarRemoverController">
+   <children>
+      <JFXTextField fx:id="textFieldNome" focusColor="#09bd9a" labelFloat="true" layoutX="65.0" layoutY="42.0" prefHeight="25.0" prefWidth="230.0" promptText="Nome galpão" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldMetrosQuadrados" focusColor="#09bd9a" labelFloat="true" layoutX="65.0" layoutY="137.0" prefHeight="25.0" prefWidth="230.0" promptText="Metros Quadrados (m²)" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldCapacidadeMax" focusColor="#09bd9a" labelFloat="true" layoutX="65.0" layoutY="217.0" prefHeight="25.0" prefWidth="230.0" promptText="Capacidade Maxima de Animais" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldNumeroBaias" focusColor="#09bd9a" labelFloat="true" layoutX="65.0" layoutY="297.0" prefHeight="25.0" prefWidth="230.0" promptText="Numero de Baias" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldLimiteDiario" focusColor="#09bd9a" labelFloat="true" layoutX="381.0" layoutY="42.0" prefHeight="25.0" prefWidth="230.0" promptText="Limite Diário" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldQuantidadeAtual" focusColor="#09bd9a" labelFloat="true" layoutX="381.0" layoutY="137.0" prefHeight="25.0" prefWidth="230.0" promptText="Quantidade Atual" styleClass="extraLightFont14" />
+      <JFXCheckBox fx:id="checkBoxRefrigerado" checkedColor="#09bd9a" layoutX="378.0" layoutY="316.0" styleClass="extraLightFont14" text="Refrigerado" />
+      <JFXCheckBox fx:id="checkBoxMaternidade" checkedColor="#09bd9a" layoutX="378.0" layoutY="236.0" styleClass="extraLightFont14" text="Maternidade" />
+      <JFXListView fx:id="listViewGalpao" layoutX="657.0" layoutY="14.0" prefHeight="300.0" prefWidth="260.0" styleClass="regularFont16" />
+      <JFXButton fx:id="buttonAlterar" layoutX="657.0" layoutY="343.0" onAction="#handleButtonAlterar" prefHeight="46.0" prefWidth="115.0" styleClass="buttonFont18" text="Alterar" />
+      <JFXButton fx:id="buttonRemover" layoutX="802.0" layoutY="343.0" onAction="#handleButtonRemover" prefHeight="46.0" prefWidth="115.0" styleClass="buttonFont18" text="Remover" />
+   </children>
+</AnchorPane>

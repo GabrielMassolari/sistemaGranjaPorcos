@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1000.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema.controller.FXMLAnchorPaneLoginController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="550.0" style="-fx-background-color: #09bd9a;">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="500.0" layoutX="25.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="550.0" prefHeight="600.0" prefWidth="451.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="151.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/profile.png" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="textFieldUsuario" focusColor="#09bd9a" labelFloat="true" layoutX="101.0" layoutY="275.0" prefHeight="25.0" prefWidth="250.0" promptText="Usuário (Id)" styleClass="regularFont16" />
+            <JFXPasswordField fx:id="textFieldSenha" focusColor="#09bd9a" labelFloat="true" layoutX="101.0" layoutY="373.0" prefHeight="25.0" prefWidth="250.0" promptText="Senha" styleClass="regularFont16" />
+            <JFXButton fx:id="buttonLogin" layoutX="156.0" layoutY="459.0" onAction="#handleButtonLogin" prefHeight="42.0" prefWidth="140.0" styleClass="buttonFont18" text="Entrar" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

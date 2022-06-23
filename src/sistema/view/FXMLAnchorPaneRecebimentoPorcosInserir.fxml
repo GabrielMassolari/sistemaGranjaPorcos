@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="960.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema.controller.FXMLAnchorPaneRecebimentoPorcosInserirController">
+   <children>
+      <JFXComboBox fx:id="comboBoxCaminhao" focusColor="#09bd9a" labelFloat="true" layoutX="95.0" layoutY="28.0" prefHeight="37.0" prefWidth="230.0" promptText="Caminhão" styleClass="extraLightFont14" />
+      <JFXComboBox fx:id="comboBoxMotorista" focusColor="#09bd9a" labelFloat="true" layoutX="95.0" layoutY="138.0" prefHeight="37.0" prefWidth="230.0" promptText="Motorista" styleClass="extraLightFont14" />
+      <JFXComboBox fx:id="comboBoxGalpao" focusColor="#09bd9a" labelFloat="true" layoutX="95.0" layoutY="247.0" prefHeight="37.0" prefWidth="230.0" promptText="Galpão" styleClass="extraLightFont14" />
+      <JFXDatePicker fx:id="datePickerData" defaultColor="#09bd9a" layoutX="618.0" layoutY="28.0" prefHeight="37.0" prefWidth="230.0" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldQuantidadePorcos" focusColor="#09bd9a" labelFloat="true" layoutX="618.0" layoutY="138.0" prefHeight="25.0" prefWidth="200.0" promptText="Quantidade Porcos" styleClass="extraLightFont14" />
+      <JFXCheckBox fx:id="checkBoxFilhotes" checkedColor="#09bd9a" layoutX="618.0" layoutY="257.0" styleClass="extraLightFont14" text="Filhotes" />
+      <JFXButton fx:id="buttonInserir" layoutX="437.0" layoutY="341.0" onAction="#handleButtonInserir" styleClass="buttonFont18" text="Inserir" />
+   </children>
+</AnchorPane>

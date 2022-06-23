@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="960.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema.controller.FXMLAnchorPaneGalpaoInserirController">
+   <children>
+      <JFXTextField fx:id="textFieldNome" focusColor="#09bd9a" labelFloat="true" layoutX="116.0" layoutY="50.0" prefHeight="25.0" prefWidth="230.0" promptText="Nome galpão" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldMetrosQuadrados" focusColor="#09bd9a" labelFloat="true" layoutX="116.0" layoutY="138.0" prefHeight="25.0" prefWidth="230.0" promptText="Metros Quadrados (m²)" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldCapacidadeMax" focusColor="#09bd9a" labelFloat="true" layoutX="116.0" layoutY="226.0" prefHeight="25.0" prefWidth="230.0" promptText="Capacidade Maxima de Animais" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldNumeroBaias" focusColor="#09bd9a" labelFloat="true" layoutX="614.0" layoutY="50.0" prefHeight="25.0" prefWidth="230.0" promptText="Numero de Baias" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldLimiteDiario" focusColor="#09bd9a" labelFloat="true" layoutX="614.0" layoutY="138.0" prefHeight="25.0" prefWidth="230.0" promptText="Limite Diário" styleClass="extraLightFont14" />
+      <JFXTextField fx:id="textFieldQuantidadeAtual" disable="true" focusColor="#09bd9a" labelFloat="true" layoutX="614.0" layoutY="226.0" prefHeight="25.0" prefWidth="230.0" promptText="Quantidade Atual" styleClass="extraLightFont14" text="0" />
+      <JFXCheckBox fx:id="checkBoxRefrigerado" checkedColor="#09bd9a" layoutX="116.0" layoutY="294.0" styleClass="extraLightFont14" text="Refrigerado" />
+      <JFXCheckBox fx:id="checkBoxMaternidade" checkedColor="#09bd9a" layoutX="614.0" layoutY="294.0" styleClass="extraLightFont14" text="Maternidade" />
+      <JFXButton fx:id="buttonInserir" layoutX="437.0" layoutY="353.0" onAction="#handleButtonInserir" styleClass="buttonFont18" text="Inserir" />
+   </children>
+</AnchorPane>

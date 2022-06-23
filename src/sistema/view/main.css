@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@200;400;700&display=swap');
+
+.extraLightFont16 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 16px;
+}
+
+.regularFont16 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 16px;
+}
+
+.boldFont16 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 16px;
+}
+
+.extraLightFont14 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 14px;
+}
+
+.regularFont14 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 14px;
+}
+
+.boldFont14 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 14px;
+}
+
+.buttonFont18 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 18px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #09bd9a;
+}
+
+.buttonFont14 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-background-color: #09bd9a;
+}
+
+.extraLightFont18 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 200;
+    -fx-font-size: 18px;
+}
+
+.regularFont18 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 18px;
+}
+
+.boldFont18 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 700;
+    -fx-font-size: 18px;
+}
+
+.titleFont24 {
+    -fx-font-family: 'Martel', serif;
+    -fx-font-weight: 400;
+    -fx-font-size: 24px;
+}
+
+.jfx-tab-pane .tab-header-background { 
+    -fx-background-color: #09bd9a; 
+}
+
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #09bd9a;
+}
+
+.table-view .column-header-background .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: 700;
+}
+
+.table-column {
+    -fx-alignment: CENTER-RIGHT;
+}
+
+.default-color0.chart-bar { 
+    -fx-bar-fill: #09bd9a; 
+}

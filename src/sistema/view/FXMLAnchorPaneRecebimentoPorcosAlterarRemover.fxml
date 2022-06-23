@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="960.0" styleClass="extraLightFont14" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema.controller.FXMLAnchorPaneRecebimentoPorcosAlterarRemoverController">
+   <children>
+      <JFXComboBox fx:id="comboBoxCaminhao" focusColor="#09bd9a" labelFloat="true" layoutX="45.0" layoutY="44.0" prefHeight="25.0" prefWidth="230.0" promptText="Caminhão" />
+      <JFXComboBox fx:id="comboBoxMotorista" focusColor="#09bd9a" labelFloat="true" layoutX="45.0" layoutY="185.0" prefHeight="25.0" prefWidth="230.0" promptText="Motorista" />
+      <JFXComboBox fx:id="comboBoxGalpao" focusColor="#09bd9a" labelFloat="true" layoutX="45.0" layoutY="316.0" prefHeight="25.0" prefWidth="230.0" promptText="Galpão" />
+      <JFXDatePicker fx:id="datePickerData" defaultColor="#09bd9a" layoutX="351.0" layoutY="44.0" prefHeight="37.0" prefWidth="200.0" />
+      <JFXTextField fx:id="textFieldQuantidadePorcos" focusColor="#09bd9a" labelFloat="true" layoutX="351.0" layoutY="185.0" prefHeight="37.0" prefWidth="172.0" promptText="Quantidade Porcos" styleClass="extraLightFont14" />
+      <JFXCheckBox fx:id="checkBoxFilhotes" checkedColor="#09bd9a" layoutX="351.0" layoutY="326.0" styleClass="extraLightFont14" text="Filhotes" />
+      <JFXListView fx:id="listViewRecebimentoPorcos" layoutX="618.0" layoutY="28.0" prefHeight="297.0" prefWidth="298.0" styleClass="extraLightFont14" />
+      <JFXButton fx:id="buttonAlterar" layoutX="618.0" layoutY="353.0" onAction="#handleButtonAlterar" prefHeight="46.0" prefWidth="120.0" styleClass="buttonFont18" text="Alterar" />
+      <JFXButton fx:id="buttonRemover" layoutX="796.0" layoutY="353.0" onAction="#handleButtonRemover" prefHeight="46.0" prefWidth="120.0" styleClass="buttonFont18" text="Remover" />
+   </children>
+</AnchorPane>

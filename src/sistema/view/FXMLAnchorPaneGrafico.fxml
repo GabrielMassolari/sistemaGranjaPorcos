@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="960.0" stylesheets="@main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistema.controller.FXMLAnchorPaneGraficoController">
+   <children>
+      <Pane prefHeight="130.0" prefWidth="960.0" style="-fx-background-color: #09bd9a;">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="180.0" layoutX="741.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/2%20-%20Recortado.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="437.0" layoutY="58.0" styleClass="titleFont24" text="Gráfico" textFill="WHITE" />
+            <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="543.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/dashboard1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <BarChart fx:id="barChart" layoutX="324.0" layoutY="155.0">
+        <xAxis>
+          <CategoryAxis fx:id="categoryAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="numberAxis" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <JFXComboBox fx:id="comboBoxAno" focusColor="#09bd9a" labelFloat="true" layoutX="48.0" layoutY="166.0" prefHeight="37.0" prefWidth="210.0" promptText="Selecione o ano" styleClass="extraLightFont14" />
+      <JFXComboBox fx:id="comboBoxGalpao" focusColor="#09bd9a" labelFloat="true" layoutX="48.0" layoutY="230.0" prefHeight="37.0" prefWidth="210.0" promptText="Selecione  o Galpão" styleClass="extraLightFont14" />
+      <JFXComboBox fx:id="comboBoxInformacao" focusColor="#09bd9a" labelFloat="true" layoutX="48.0" layoutY="290.0" prefHeight="37.0" prefWidth="210.0" promptText="Selecione a informação" styleClass="extraLightFont14" />
+      <Label fx:id="labelMaiorValor" layoutX="48.0" layoutY="411.0" prefHeight="30.0" prefWidth="280.0" styleClass="boldFont14" />
+      <Label fx:id="labelSomaValor" layoutX="48.0" layoutY="466.0" prefHeight="30.0" prefWidth="280.0" styleClass="boldFont14" />
+      <Label fx:id="labelMediaValor" layoutX="48.0" layoutY="525.0" prefHeight="30.0" prefWidth="280.0" styleClass="boldFont14" />
+      <JFXButton fx:id="buttonGerar" layoutX="48.0" layoutY="355.0" onAction="#gerarDashboard" prefHeight="37.0" prefWidth="210.0" styleClass="buttonFont14" text="Gerar" />
+   </children>
+</AnchorPane>
